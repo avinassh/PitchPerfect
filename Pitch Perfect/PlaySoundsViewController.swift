@@ -10,6 +10,9 @@ import UIKit
 
 class PlaySoundsViewController: UIViewController {
 
+    @IBAction func playSlowAudio(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
