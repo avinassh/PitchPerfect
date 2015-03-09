@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         recordingInProgress.hidden = false
     }
     
+    @IBAction func stopAudioRecording(sender: UIButton) {
+        recordingInProgress.hidden = true
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
