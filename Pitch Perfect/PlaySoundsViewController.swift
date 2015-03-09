@@ -13,6 +13,9 @@ class PlaySoundsViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     var receivedAudio: RecordedAudio!
+    // create an audio engine
+    var audioEngine: AVAudioEngine!
+    var audioFile: AVAudioFile!
     
     @IBAction func playSlowAudio(sender: UIButton) {
         audioPlayer.stop()
@@ -30,6 +33,29 @@ class PlaySoundsViewController: UIViewController {
     
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
+        playAudioWithVariblePitch(1000)
+    }
+    
+    func playAudioWithVariblePitch(pitch: Float) {
+        // stop all playing audio
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = pitch
+        audioEngine.attachNode(changePitchEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        audioEngine.startAndReturnError(nil)
+        
+        audioPlayerNode.play()
         
     }
     
@@ -47,7 +73,12 @@ class PlaySoundsViewController: UIViewController {
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathURL, error: nil)
             // required if you want to change the rate of playback
             audioPlayer.enableRate = true
+            
+            // intiliaze the AVAudioFile
+            audioFile = AVAudioFile(forReading: filePathURL, error: nil)
         }
+        // initiliaze the engine
+        audioEngine = AVAudioEngine()
     }
 
     override func didReceiveMemoryWarning() {
