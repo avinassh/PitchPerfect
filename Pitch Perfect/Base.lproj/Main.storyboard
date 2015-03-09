@@ -40,6 +40,9 @@
                             <constraint firstItem="rMe-CC-tIc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QEc-t4-c4h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="7Gg-jC-SzI" id="Gdc-hx-2Wj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
