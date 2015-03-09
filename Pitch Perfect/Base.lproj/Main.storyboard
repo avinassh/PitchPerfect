@@ -76,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-22-TlG">
-                                <rect key="frame" x="134" y="122" width="100" height="100"/>
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <state key="normal" image="slowbutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -84,8 +84,30 @@
                                     <action selector="playSlowAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="1vr-s1-rfQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-zU-3ip">
+                                <rect key="frame" x="124" y="72" width="100" height="100"/>
+                                <state key="normal" image="fastbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="Fhm-ST-byH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d9-71-dcb">
+                                <rect key="frame" x="275" y="530" width="50" height="50"/>
+                                <state key="normal" image="stopbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudioPlayback:" destination="oNf-vW-odE" eventType="touchUpInside" id="5PH-SU-PnN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3d9-71-dcb" firstAttribute="centerX" secondItem="hdB-4z-K9W" secondAttribute="centerX" id="uT6-3N-cwg"/>
+                            <constraint firstAttribute="bottom" secondItem="3d9-71-dcb" secondAttribute="bottom" constant="20" symbolic="YES" id="yKa-aJ-ogJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lc-fg-5fP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,6 +134,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fastbutton" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowbutton" width="100" height="100"/>
         <image name="stopbutton" width="50" height="50"/>
