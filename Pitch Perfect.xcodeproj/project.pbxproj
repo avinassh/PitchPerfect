@@ -14,6 +14,7 @@
 		8279E2B91AAD72420045F5F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8279E2B71AAD72420045F5F3 /* LaunchScreen.xib */; };
 		8279E2C51AAD72420045F5F3 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8279E2C41AAD72420045F5F3 /* Pitch_PerfectTests.swift */; };
 		82D609991AAD867E00B197F0 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D609981AAD867E00B197F0 /* PlaySoundsViewController.swift */; };
+		82D6099B1AAD88D000B197F0 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82D6099A1AAD88D000B197F0 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8279E2C31AAD72420045F5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8279E2C41AAD72420045F5F3 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		82D609981AAD867E00B197F0 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		82D6099A1AAD88D000B197F0 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		8279E2AC1AAD72420045F5F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				82D6099A1AAD88D000B197F0 /* movie_quote.mp3 */,
 				8279E2AD1AAD72420045F5F3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 			files = (
 				8279E2B41AAD72420045F5F3 /* Main.storyboard in Resources */,
 				8279E2B91AAD72420045F5F3 /* LaunchScreen.xib in Resources */,
+				82D6099B1AAD88D000B197F0 /* movie_quote.mp3 in Resources */,
 				8279E2B61AAD72420045F5F3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
