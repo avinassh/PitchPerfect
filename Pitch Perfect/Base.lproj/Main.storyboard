@@ -75,22 +75,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-22-TlG">
-                                <rect key="frame" x="16" y="72" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-22-TlG">
+                                <rect key="frame" x="180" y="180" width="100" height="100"/>
                                 <state key="normal" image="slowbutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="playSlowAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="1vr-s1-rfQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-zU-3ip">
-                                <rect key="frame" x="124" y="72" width="100" height="100"/>
-                                <state key="normal" image="fastbutton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playFastAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="Fhm-ST-byH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d9-71-dcb">
@@ -102,8 +93,8 @@
                                     <action selector="stopAudioPlayback:" destination="oNf-vW-odE" eventType="touchUpInside" id="5PH-SU-PnN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-oh-O4k">
-                                <rect key="frame" x="16" y="180" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-oh-O4k">
+                                <rect key="frame" x="180" y="320" width="100" height="100"/>
                                 <state key="normal" image="chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -111,8 +102,8 @@
                                     <action selector="playChipmunkAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="ZXE-Qg-dPq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYU-7a-PLf">
-                                <rect key="frame" x="124" y="180" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYU-7a-PLf">
+                                <rect key="frame" x="320" y="320" width="100" height="100"/>
                                 <state key="normal" image="darthvader">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -120,11 +111,44 @@
                                     <action selector="playDarthvaderAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="svY-Bi-XTb"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaT-do-kaK">
+                                <rect key="frame" x="288" y="244" width="24" height="111"/>
+                                <state key="normal" image="vblank">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-0h-VbL">
+                                <rect key="frame" x="245" y="288" width="111" height="24"/>
+                                <state key="normal" image="hblank">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-zU-3ip">
+                                <rect key="frame" x="320" y="180" width="100" height="100"/>
+                                <state key="normal" image="fastbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="oNf-vW-odE" eventType="touchUpInside" id="Fhm-ST-byH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="eaT-do-kaK" secondAttribute="centerX" id="2UN-SL-eAZ"/>
+                            <constraint firstItem="KOz-zU-3ip" firstAttribute="leading" secondItem="eaT-do-kaK" secondAttribute="trailing" constant="8" symbolic="YES" id="3HE-1f-zPZ"/>
+                            <constraint firstAttribute="centerY" secondItem="LaD-0h-VbL" secondAttribute="centerY" id="DPM-EO-1dp"/>
+                            <constraint firstItem="eaT-do-kaK" firstAttribute="leading" secondItem="hSh-22-TlG" secondAttribute="trailing" constant="8" symbolic="YES" id="E80-Wu-osg"/>
+                            <constraint firstAttribute="centerY" secondItem="eaT-do-kaK" secondAttribute="centerY" id="IEV-ro-9CI"/>
+                            <constraint firstItem="OYU-7a-PLf" firstAttribute="leading" secondItem="KOz-zU-3ip" secondAttribute="leading" id="IuK-au-Lbf"/>
+                            <constraint firstItem="KOz-zU-3ip" firstAttribute="top" secondItem="hSh-22-TlG" secondAttribute="top" id="hBA-bj-FGs"/>
+                            <constraint firstItem="OYU-7a-PLf" firstAttribute="top" secondItem="6ad-oh-O4k" secondAttribute="top" id="iMY-Af-kUY"/>
+                            <constraint firstItem="6ad-oh-O4k" firstAttribute="top" secondItem="LaD-0h-VbL" secondAttribute="bottom" constant="8" symbolic="YES" id="kUs-Yt-MAb"/>
+                            <constraint firstItem="LaD-0h-VbL" firstAttribute="top" secondItem="hSh-22-TlG" secondAttribute="bottom" constant="8" symbolic="YES" id="oRz-RM-B7I"/>
                             <constraint firstItem="3d9-71-dcb" firstAttribute="centerX" secondItem="hdB-4z-K9W" secondAttribute="centerX" id="uT6-3N-cwg"/>
                             <constraint firstAttribute="bottom" secondItem="3d9-71-dcb" secondAttribute="bottom" constant="20" symbolic="YES" id="yKa-aJ-ogJ"/>
+                            <constraint firstItem="hSh-22-TlG" firstAttribute="leading" secondItem="6ad-oh-O4k" secondAttribute="leading" id="yTF-QV-EGs"/>
+                            <constraint firstAttribute="centerX" secondItem="LaD-0h-VbL" secondAttribute="centerX" id="zif-A8-7kt"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -155,8 +179,10 @@
         <image name="chipmunk" width="100" height="100"/>
         <image name="darthvader" width="100" height="100"/>
         <image name="fastbutton" width="100" height="100"/>
+        <image name="hblank" width="111" height="24"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowbutton" width="100" height="100"/>
         <image name="stopbutton" width="50" height="50"/>
+        <image name="vblank" width="24" height="111"/>
     </resources>
 </document>
