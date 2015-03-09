@@ -65,7 +65,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             recordedAudio.filePathUrl = recorder.url
             recordedAudio.title = recorder.url.lastPathComponent
             // perform segue
+            // sender is the object which initiated the segue
             performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "stopRecording" {
+            if let playSoundsVC = segue.destinationViewController as? PlaySoundsViewController {
+                if let data = sender as? RecordedAudio {
+                    playSoundsVC.receivedAudio = data
+                }
+            }
         }
     }
     
