@@ -52,6 +52,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="rMe-CC-tIc" id="g3Z-wS-A3V"/>
                         <outlet property="recordingInProgress" destination="7Gg-jC-SzI" id="Gdc-hx-2Wj"/>
                         <outlet property="stopButton" destination="XvN-UF-jgn" id="OoZ-SI-0CO"/>
                     </connections>
