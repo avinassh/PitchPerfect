@@ -38,7 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudioRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dt5-AS-GRD"/>
-                                    <segue destination="oNf-vW-odE" kind="show" id="ZFZ-3b-kI3"/>
+                                    <segue destination="oNf-vW-odE" kind="show" identifier="stopRecording" id="ZFZ-3b-kI3"/>
                                 </connections>
                             </button>
                         </subviews>
